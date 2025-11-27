@@ -15,6 +15,9 @@ import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 
+import androidx.annotation.Keep
+
+@Keep
 class FlutterLogcatMonitorPlugin : FlutterPlugin, MethodCallHandler, EventChannel.StreamHandler {
     private val uiThreadHandler = Handler(Looper.getMainLooper())
     private var channel: MethodChannel? = null
